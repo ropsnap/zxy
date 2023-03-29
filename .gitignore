@@ -1,4 +1,4 @@
-snap/
+node_modules
 .android/
 .bash_history
 .bashrc
@@ -14,9 +14,3 @@ snap/
 .sudo_as_admin_successful
 .synaptic/
 .wget-hsts
-
-CashFactory-rpsnp/
-
-CashFactory/node_modules
-ipChangeServer/node_modules
-proxyServer/node_modules

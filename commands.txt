@@ -1,0 +1,17 @@
+on dir /root/zxy
+
+1. Start Proxy Server
+
+	./proxyServer/bin/proxy.js --port 1030 --authenticate 'if [ "$PROXY_AUTH_USERNAME" = "default" ] && [ "$PROXY_AUTH_PASSWORD" = "default" ]; then exit 0; fi; exit 1;'
+
+2. Start IP Change Server
+
+	./ipChangeServer/bin/www
+
+3. Start Proxy Server Tunnel
+
+	./loclx tunnel tcp --port 1025
+
+4. Start IP Change Server Tunnel
+
+	./loclx tunnel tcp --port 1025

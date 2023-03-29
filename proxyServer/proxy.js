@@ -18,7 +18,7 @@ debug.proxyResponse = require('debug')('proxy ↓ ↓ ↓');
 var hostname = require('os').hostname();
 
 // proxy server version
-var version = require('./package.json').version;
+var version = require('../package.json').version;
 
 /**
  * Module exports.

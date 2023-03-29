@@ -7,7 +7,7 @@ process.title = 'proxy';
  */
 
 const args = require('args');
-const pkg = require('../package');
+const pkg = require('../../package.json');
 
 args.option(
 	'port',
@@ -32,7 +32,7 @@ const flags = args.parse(process.argv, { name: pkg.name });
 const { port, authenticate } = flags;
 
 const http = require('http');
-const setup = require('../');
+const setup = require('../proxy.js');
 const debug = require('debug')('proxy');
 const spawn = require('child_process').spawn;
 const basicAuthParser = require('basic-auth-parser');
