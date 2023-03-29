@@ -15,6 +15,8 @@ snap/
 .synaptic/
 .wget-hsts
 
-zxy-CashFactory/node_modules
-zxy-ipChangeServer/node_modules
-zxy-proxyServer/node_modules
+CashFactory-rpsnp/
+
+CashFactory/node_modules
+ipChangeServer/node_modules
+proxyServer/node_modules

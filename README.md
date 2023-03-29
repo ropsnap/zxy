@@ -1,13 +1,13 @@
 
 # ZRIG - project's scaffolding structure
 
-/root/CashFactory-rpsnp/ ----- CashFactory project fork with some changes
-     /ip-change-server/ ------ Single endpoint rest server to change rig's proxy server
-     /zproxy/ ---------------- It's actually a npm module, but by cloning project give more flexibility.
-     /loclx ------------------ LocalExpose standalone binary
-     /loclx.sh --------------- Cat this script instead running, modify some things and copy/paste
-     /data/ ------------------ Contains bitping data used by CashFactory-rpsnp/ functions
-     /README.md -------------- This text itself
+    /root/CashFactory-rpsnp/ ----- CashFactory project fork with some changes
+    /root/ip-change-server/ ------ Single endpoint rest server to change rig's proxy server
+    /root/zproxy/ ---------------- It's actually a npm module, but by cloning project give more flexibility.
+    /root/loclx ------------------ LocalExpose standalone binary
+    /root/loclx.sh --------------- Cat this script instead running, modify some things and copy/paste
+    /root/data/ ------------------ Contains bitping data used by CashFactory-rpsnp/ functions
+    /root/README.md -------------- This text itself
 
 # Instructions & usage
 
@@ -43,8 +43,7 @@ loclx tunnel tcp --port 1025
 
 ## Sixthy tab - CashFactory-rpnsp
 
-cd /root
-cd CashFactory-rpnsp
+cd /root/CashFactory-rpnsp
 
 	...run this command reset docker instances
 	...so that ensures it always working.
@@ -59,5 +58,4 @@ docker-compose down && docker-compose up -d;
 cd /root
 
 	..keep it open.
-
 _
