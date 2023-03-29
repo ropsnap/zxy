@@ -14,7 +14,19 @@ module.exports = {
 
 		{
 			name: "IP Change Server",
-			script: `node ./ipChangeServer/bin/www.js`,
+			script: `node ./ipChangeServer/bin/www`,
+			env
+		},
+
+		{
+			name: "Tunnel - Proxy Server",
+			script: `node ./loclx tunnel tcp --port ${env.PROXY_SERVER_PORT}`,
+			env
+		},
+
+		{
+			name: "Tunnel - IP Change Server",
+			script: `node ./loclx tunnel tcp --port ${env.IP_CHANGE_SERVER_PORT}`,
 			env
 		}
 	]
