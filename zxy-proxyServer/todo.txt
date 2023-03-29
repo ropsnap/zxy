@@ -1,0 +1,5 @@
+- add mode options
+    anonimity: passive, moderate, agressive (the more manipulate req headers)
+    speed: passive, moderate, agressive (the more clear res headers)
+
+- add algoritmos para tanto acima.
