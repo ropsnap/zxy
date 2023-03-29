@@ -20,13 +20,13 @@ module.exports = {
 
 		{
 			name: "Tunnel - Proxy Server",
-			script: `./loclx tunnel tcp --port ${env.PROXY_SERVER_PORT}`,
+			script: `./loclx tunnel tcp --to ${env.PROXY_SERVER_PORT}`,
 			env
 		},
 
 		{
 			name: "Tunnel - IP Change Server",
-			script: `./loclx tunnel tcp --port ${env.IP_CHANGE_SERVER_PORT}`,
+			script: `./loclx tunnel tcp --to ${env.IP_CHANGE_SERVER_PORT}`,
 			env
 		}
 	]
