@@ -5,7 +5,6 @@
  */
 
 var app = require('../app');
-var config = require('../config.js')
 var debug = require('debug')('ipchange-server:server');
 var http = require('http');
 
@@ -13,7 +12,7 @@ var http = require('http');
  * Get port from environment and store in Express.
  */
 
-var port = normalizePort(process.env.PORT || config.apiServerPort);
+var port = normalizePort(process.env.IP_CHANGE_SERVER_PORT || 8080);
 app.set('port', port);
 
 /**
