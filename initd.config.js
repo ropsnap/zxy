@@ -14,7 +14,7 @@ module.exports = {
 
 		{
 			name: "IP Change Server",
-			script: `./ipChangeServer/bin/www.js`,
+			script: `node ./ipChangeServer/bin/www.js`,
 			env
 		}
 	]
