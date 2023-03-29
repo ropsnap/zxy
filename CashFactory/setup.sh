@@ -14,7 +14,7 @@ clear;
 
 # ---------------------------------------------------------------- 1
 echo;
-echo ' [1] Setting up CashFactory-rpsnp ---------------------------';
+echo ' [1] Setting up CashFactory ---------------------------';
 echo;
 
 sleep 1;
@@ -35,12 +35,12 @@ apt-get -y install docker-compose
 
 # ---------------------------------------------------------------- 2
 echo;
-echo ' [2] Opening CashFactory-rpsnp/.env for change device name --';
+echo ' [2] Opening zxy/CashFactory/.env for change device name --';
 echo;
 
 sleep 3;
 
-nano $HOME/CashFactory-rpsnp/.env;
+nano $HOME/zxy/CashFactory/.env;
 
 # --------------------------------------------------------------- 3
 echo;
@@ -58,7 +58,7 @@ echo;
 
 sleep 3;
 
-sudo docker run -it -v $HOME/CashFactory/data/bitping/:/root/.bitping bitping/bitping-node:latest;
+sudo docker run -it -v $HOME/zxy/CashFactory/data/bitping/:/root/.bitping bitping/bitping-node:latest;
 
 echo;
 echo ' ✓ Success! ------------------------------------------------';
