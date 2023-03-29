@@ -4,13 +4,11 @@ const express = require('express'),
 	  basicAuth = require('express-basic-auth'),
 	  logger = require('morgan');
 
+const env = process.env;
+
 // single index router
 var router = require('./router.js'),
 	app = express();
-
-const config = require('./config.js'),
-	  username = config.username,
-	  password = config.password;
 
 app.use(logger('dev'))
 app.use(express.json())
@@ -18,7 +16,7 @@ app.use(express.urlencoded({ extended: false }))
 app.use(cookieParser())
 
 app.use(basicAuth({
-    users: { [username]: password }
+    users: { [env.USERNAME]: env.PASSWORD }
 }))
 
 app.use('/', router);
