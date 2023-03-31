@@ -3,3 +3,35 @@
     speed: passive, moderate, agressive (the more clear res headers)
 
 - add algoritmos para tanto acima.
+
+- solucao pra upstream no ip 4g
+
+> apos recebida chamada de api
+> ...desligar interface da rede fibra
+
+ou
+
+> apenas setar o --local-address para a interface 4g?
+
+- armazenamento e troca de senha do proxy server
+- disponibilidade do proxy server (uma prop)
+- estados do proxy server (uma prop)
+
+
+
+
+
+
+
+
+// ambos em index.js
+OK - noneed - verificacao de confirmacao de troca de ip na api
+OK - noneed - opcao de tentativas de refazer a operacao se for confirmado ips 
+  diferentes (ou detectado os mesmos ips tanto faz)
+- testar proxy publico na vm com um client de cell no 4g
+
+
+
+
+
+por pra funcionar oq e ja tava pronto, aperfeicoar, e dps pensa no resto

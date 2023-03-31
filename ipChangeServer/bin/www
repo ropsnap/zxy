@@ -1,5 +1,9 @@
 #!/usr/bin/env node
 
+require('dotenv').config()
+
+// console.log('process.env', process.env)
+
 /**
  * Module dependencies.
  */
@@ -12,8 +16,10 @@ var http = require('http');
  * Get port from environment and store in Express.
  */
 
-var port = normalizePort(Number(process.env.IP_CHANGE_SERVER_PORT) || 8080);
+var port = normalizePort(process.env.IP_CHANGE_SERVER_PORT || 666);
 app.set('port', port);
+
+// console.log('port', port)
 
 /**
  * Create HTTP server.
@@ -25,7 +31,7 @@ var server = http.createServer(app);
  * Listen on provided port, on all network interfaces.
  */
 
-server.listen(port);
+server.listen(port, '127.0.0.1');
 server.on('error', onError);
 server.on('listening', onListening);
 
@@ -86,5 +92,6 @@ function onListening() {
   var bind = typeof addr === 'string'
     ? 'pipe ' + addr
     : 'port ' + addr.port;
-  debug('Listening on ' + bind);
+    console.log()
+    console.info('Listening on ' + addr.address + ':' + addr.port);
 }
